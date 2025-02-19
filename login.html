@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/icon.ico" type="image/x-icon">
+  <title>账号登录</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    .login_item {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 350px;
+      height: 280px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 8px white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .login_item p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    input {
+      width: 100%;
+      height: 55px;
+      border: 0;
+      background: none;
+      outline: none;
+      padding: 10px;
+    }
+
+    button {
+      width: 80%;
+      height: 40px;
+      line-height: 40px;
+      border: 0;
+      margin: 15px 0;
+      border-radius: 20px;
+      box-shadow: 0 0 4px white;
+      cursor: pointer;
+      color: white;
+      background-color: rgb(255, 120, 0);
+      text-align: center;
+    }
+
+    .aCenter {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .login_item a {
+
+      font-size: 14px;
+      display: block;
+      cursor: pointer;
+    }
+
+    #wj {
+      color: rgb(227, 131, 131);
+    }
+
+    #lj {
+      color: rgb(84, 160, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="./images/logo.png">
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./scenic.html">景区介绍</a></li>
+        <li><a href="./guide.html">旅游指南</a></li>
+        <li><a href="./activity.html">新闻动态</a></li>
+        <li><a href="./hotel.html">酒店住宿</a></li>
+        <li><a href="./food.html">周边美食</a></li>
+        <li><a href="./picture.html">美图一览</a></li>
+        <li><a href="./about.html">关于我们</a></li>
+        <li><a href="./message.html">留言板</a></li>
+      </ul>
+      <!-- 登录 -->
+      <a href="./login.html">
+        <div class="login_active">账号登录</div>
+      </a>
+    </nav>
+    <!-- 主内容 -->
+    <div class="login_item">
+      <!-- 表单 -->
+      <form onsubmit="loginUser(event)">
+        <input placeholder="请输入用户名" type="text" name="firstname"><br>
+        <hr>
+        <input placeholder="请输入密码" type="password" name="lastname"><br>
+        <hr>
+        <button>登录</button>
+      </form>
+      <div class="aCenter">
+        <a id="wj" href="./forget.html">忘记密码?</a>
+        <a id="lj" href="./register.html">立即注册</a>
+      </div>
+
+    </div>
+  </header>
+  <script>
+    function loginUser(event) {
+      event.preventDefault(); // 阻止表单默认提交行为
+      // 这里可以添加登录验证逻辑
+      // 假设用户名和密码验证成功
+      window.location.href = './index.html'; // 模拟登录成功后跳转到首页
+    }
+  </script>
+</body>
+
+
+</html>

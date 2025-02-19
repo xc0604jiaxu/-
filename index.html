@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/icon.ico" type="image/x-icon">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<style>
+  /* 轮播图 */
+  .shell {
+    width: 100%;
+    height: 400px;
+    margin: 40px auto 0 auto;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  .images {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+  }
+
+  .img {
+    width: 100%;
+    background-size: 100% 100%;
+  }
+
+  .img:nth-child(1) {
+    background-image: url("./images/2.webp");
+  }
+
+  .img:nth-child(2) {
+    background-image: url("./images/a1.png");
+  }
+
+  .img:nth-child(3) {
+    background-image: url("./images/banner.webp");
+  }
+
+  .min-images {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    z-index: 999;
+    right: 30%;
+  }
+
+  .min {
+    width: 16px;
+    background-color: white;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: -20px 0;
+    list-style: none;
+  }
+
+
+
+  .button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+
+  .button-left,
+  .button-right {
+    font-size: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 400px;
+
+    color: white;
+
+  }
+</style>
+
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="./images/logo.png">
+      <ul>
+        <li><a class="active" href="./index.html">首页</a></li>
+        <li><a href="./scenic.html">景区介绍</a></li>
+        <li><a href="./guide.html">旅游指南</a></li>
+        <li><a href="./activity.html">新闻动态</a></li>
+        <li><a href="./hotel.html">酒店住宿</a></li>
+        <li><a href="./food.html">周边美食</a></li>
+        <li><a href="./picture.html">美图一览</a></li>
+        <li><a href="./about.html">关于我们</a></li>
+        <li><a href="./message.html">留言板</a></li>
+
+      </ul>
+      <!-- 登录 -->
+
+      <a href="./login.html">
+        <div class="login">账号登录</div>
+      </a>
+
+    </nav>
+    <!--  -->
+    <div class="header_title">
+      <h1>长白山景区</h1>
+      <p>国家AAAAA级景区 • 中华十大名山之一</p>
+    </div>
+  </header>
+  <!-- 主内容 -->
+  <div class="box">
+    <!-- 长白山景区 / 概述 -->
+    <h2 class="_title">长白山景区 / 概述</h2>
+    <div class="summary">
+      <div>
+        <p>
+          &#12288;&#12288;长白山景区，位于吉林省安图县二道白河镇池北区东南部，东南与朝鲜毗邻，坐落于长白山北坡，距长白山34公里，距双目峰中朝边境65公里，区域面积52.42平方公里，现为国家AAAAA级景区旅游景区。
+        </p>
+        <p>&#12288;&#12288;长白山自古以来就是中国的神圣领土，是中华十大名山之一。长白山在《山海经》称不咸山，北魏称徒太山，唐称太白山，辽金已有长白山之名。</p>
+        <p>
+          &#12288;&#12288;主峰长白山多白色浮石与积雪而得名，素有“千年积雪万年松，直上人间第一峰”的美誉。景区是拥有“神山、圣水、奇林、仙果”等盛誉的旅游胜地，也是满族的发祥地，在清代有“圣地”之誉，皇帝须亲自或委派大臣到吉林乌拉（今吉林市）望祭长白山。
+        </p>
+      </div>
+      <img src="./images/2.webp">
+    </div>
+    <!-- 主要景点 -->
+    <h2 class="_title">主要景点</h2>
+    <div class="scenic">
+      <div>
+        <img src="./images/scenic/1.png">
+        <p>天池</p>
+      </div>
+      <div>
+        <img src="./images/scenic/2.png">
+        <p>聚龙泉</p>
+      </div>
+      <div>
+        <img src="./images/scenic/3.png">
+        <p>黑风口</p>
+      </div>
+      <div>
+        <img src="./images/scenic/4.png">
+        <p>长白瀑布群</p>
+      </div>
+    </div>
+    <!-- 交通路线、新闻动态 -->
+    <div class="wrap">
+      <div class="traffic">
+        <h2 class="_title">交通路线</h2>
+        <div class="traffic_center">
+          <img src="./images/traffic1.jpg">
+          <div>
+            <h4>铁路</h4>
+            <p>白河站是离长白山景区最近的火车站，有发往长春和通化的列车。从长春乘K953次列车到白河，也可以先到敦化站，再转乘汽车沿201国道前往白河。从北京出发，乘K215次到敦化，再转乘汽车到白河。</p>
+          </div>
+        </div>
+        <div class="traffic_center">
+          <img src="./images/traffic2.jpg">
+          <div>
+            <h4>高铁</h4>
+            <p>2021年12月24日，首条通往长白山的高铁——新建敦化至白河铁路客运专线开通，长白山地区正式迈入高铁时代，去往著名景区长白山的路途不再折腾。</p>
+          </div>
+        </div>
+        <div class="traffic_center">
+          <img src="./images/traffic3.jpg">
+          <div>
+            <h4>公路</h4>
+            <p>
+              到长白山必先到白河镇，201国道、202省道经过白河镇。从敦化走201国道、从延吉走202省道、从通化走201国道都可到白河，另外，从安图也有车可到。延吉市客运南站每天有巴士直达长白山天池景区；还有班车到二道白河，从二道白河可包车前往长白山。
+            </p>
+          </div>
+        </div>
+        <div class="traffic_center">
+          <img src="./images/traffic4.jpg">
+          <div>
+            <h4>航空</h4>
+            <p>
+              周边城市中长春、通化、吉林、延吉都有机场，其中延吉机场距离长白山最近，延吉机场位于延吉市西部。乘飞机到长白山机场，一般是先到延吉市，再从延吉市乘汽车抵达长白山。从延吉每天有到北京、上海等大城市的航班，北京到延吉每天有航班，旺季每日4~5班，淡季至少每日一班，多在下午起飞。上海浦东到延吉每周一、四有航班。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <h2 class="_title">最新资讯</h2>
+        <ul>
+          <li>
+            <a href="./activity.html">长白山地区将出现一场明显降雪及降温天气过程</a><span>2023.12.20</span>
+          </li>
+
+          <li>
+            <a href="./activity.html">长白山要降温了!起风了! 长白山北景区主峰景点大风暂时关闭</a><span>2023.12.12</span>
+          </li>
+          <li>
+            <a href="./activity.html">不再对游客进行扫码、查核酸结果</a><span>2023.12.8</span>
+          </li>
+          <li>
+            <a href="./activity.html">高风险地区、红码及黄码游客景区不予接待</a><span>2023.12.8</span>
+          </li>
+          <li>
+            <a href="./activity.html">滑过粉雪、看过天池、吃过人参、泡过温泉，在长白山您还可以这样玩儿</a><span>2023.12.6</span>
+          </li>
+          <li>
+            <a href="./activity.html">“滑雪迎春 度假长白”长白山户外直播活动</a><span>2023.12.5</span>
+          </li>
+          <li>
+            <a href="./activity.html">第三届长白山大众攀冰挑战赛</a><span>2023.12.3</span>
+          </li>
+          <li>
+            <a href="./activity.html">第三届长白山“新春踏雪”林海雪地穿越活动</a><span>2023.12.3</span>
+          </li>
+          <li>
+            <a href="./activity.html">长白山冰雪穿越越野汽车拉力赛</a><span>2023.12.3</span>
+          </li>
+          <li>
+            <a href="./activity.html">首届长白山林海雪原穿越大会</a><span>2023.12.3</span>
+          </li>
+          <li>
+            <a href="./activity.html">第三届长白山冰雪马拉松</a><span>2023.12.3</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 美食、住宿 -->
+    <div class="wrap">
+      <div class="cate">
+        <div class="cate_title">
+          <h2>不可错过的美食</h2>
+          <a href="./food.html">查看更多+</a>
+        </div>
+        <div class="cate_center">
+          <div>
+            <img src="./images/cate1.jpg">
+            <p>一口长白DRLNK</p>
+          </div>
+          <div>
+            <img src="./images/cate2.jpg">
+            <p>亲亲烤肉</p>
+          </div>
+          <div>
+            <img src="./images/cate3.jpg">
+            <p>小木屋米酒店</p>
+          </div>
+          <div>
+            <img src="./images/cate4.jpg">
+            <p>米村拌饭</p>
+          </div>
+        </div>
+      </div>
+      <div class="lodging">
+        <div class="lodging_title">
+          <h2>酒店住宿推荐</h2>
+          <a href="./hotel.html">查看更多+</a>
+        </div>
+        <div class="lodging_center">
+          <h4>温泉皇冠酒店</h4>
+          <div class="wrap">
+            <img src="./images/lodging1.jpg">
+            <img src="./images/lodging2.jpg">
+          </div>
+
+          <div>
+
+            <ol>
+              <li><b>环境</b> 伫立在长白山脚下一片原始深林中，推开窗就
+                可以看到长白山</li>
+              <li><b>交通：</b> 距二道白河镇上开车约30分钟，到长白山景区
+                开车5-10分钟（专属vip通道）</li>
+              <li><b>红松王滑雪场：</b> 从酒店到滑雪场20分钟车程
+                就到了，酒店套餐里面包含门票和雪具，还有接
+                送车很方便</li>
+              <li><b>美食：</b> 中餐厅人参火锅套餐，长白山人参滋补火
+                锅再温暖不过10余种新鲜食材。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shell">
+      <ui class="images">
+        <li class="img"></li>
+        <li class="img"></li>
+        <li class="img"></li>
+      </ui>
+      <ui class="min-images">
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+      </ui>
+      <div class="button">
+        <div class="button-left">
+          < </div>
+            <div class="button-right">
+              >
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <footer>
+    ©长白山版权所有
+  </footer>
+</body>
+<script language="javascript" type="text/javascript" src="./js/swuper.js"></script>
+
+</html>
