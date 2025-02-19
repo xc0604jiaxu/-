@@ -1,0 +1,191 @@
+    ._title {
+      margin: 40px 0 20px 0;
+      padding-left: 10px;
+      border-left: 5px solid rgb(72, 112, 164);
+    }
+
+    /*  */
+    .wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 长白山景区 / 概述  */
+    .summary {
+      line-height: 35px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .summary img {
+      width: 330px;
+      border-radius: 10px;
+      margin-left: 15px;
+    }
+
+    /* 主要景点 */
+    .scenic {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .scenic div {
+      width: 23%;
+    }
+
+    .scenic img {
+      width: 100%;
+      height: 200px;
+      display: block;
+      cursor: pointer;
+    }
+
+    .scenic img:hover {
+      position: relative;
+      top: -4px;
+    }
+
+    .scenic p {
+      padding: 10px 20px;
+      background: #f7f7f7;
+    }
+
+
+    /* 交通 */
+    .traffic {
+      width: 60%;
+    }
+
+    .traffic_center {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .traffic_center img {
+      width: 150px;
+      height: 150px;
+      margin-right: 15px;
+    }
+
+    .traffic_center div {
+      width: 600px;
+      margin-bottom: 15px;
+      padding: 10px;
+      line-height: 30px;
+    }
+
+    .traffic_center p {
+      font-size: 13px;
+    }
+
+    /* 新闻 */
+    .info {
+      width: 36%;
+    }
+
+    .info ul {
+      font-size: 14px;
+      padding: 0 15px;
+      line-height: 35px;
+    }
+
+    .info a {
+      color: rgb(90, 151, 242);
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    /* 美食 */
+    .cate {
+      width: 47%;
+    }
+
+    .cate_title {
+      border-bottom: 5px solid rgb(72, 112, 164);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    .cate_title a:hover {
+      color: rgb(72, 112, 164);
+    }
+
+    .cate_center {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .cate_center div {
+      width: 48%;
+      margin-bottom: 20px;
+    }
+
+    .cate_center img {
+      width: 100%;
+      height: 200px;
+      display: block;
+      cursor: pointer;
+    }
+
+    .cate_center img:hover {
+      position: relative;
+      top: -4px;
+    }
+
+    .cate_center p {
+      padding: 10px 20px;
+      background: #f7f7f7;
+    }
+
+    /* 住宿 */
+    .lodging {
+      width: 48%;
+    }
+
+    .lodging_title {
+      border-bottom: 5px solid rgb(72, 112, 164);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    .lodging_title a:hover {
+      color: rgb(72, 112, 164);
+    }
+
+    .lodging_center h4 {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .lodging_center img {
+      width: 47%;
+      height: 230px;
+    }
+
+    .lodging_center div {
+      margin-bottom: 15px;
+      padding: 10px;
+      line-height: 30px;
+    }
+
+    .lodging_center ol {
+      padding: 0 20px;
+      font-size: 14px;
+    }
+
+    /* 美景 */
+    .picture {
+      width: 100%;
+      height: 400px;
+    }

@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+body {
+  min-width: 1400px;
+}
+
+header {
+  width: 100%;
+  background-image: url('../images/picture2.jpg');
+  height: 650px;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+@media screen and (min-width:1600px) {
+  header {
+    height: 1100px;
+  }
+
+}
+
+@media screen and (min-width:1920px) {
+  header {
+    height: 1400px;
+  }
+
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  line-height: 80px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgba(255, 255, 255, .7); */
+  background: rgba(255, 255, 255);
+  z-index: 99;
+  font-size: 17px;
+}
+
+nav ul {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav ul a {
+  color: rgb(72, 112, 164);
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 80px;
+}
+
+nav ul a:hover {
+  color: white;
+  background: rgba(72, 112, 164, 0.5);
+}
+
+header .active {
+  color: white;
+  background: rgb(72, 112, 164);
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+
+}
+
+.header_title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.header_title h1 {
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.header_title p {
+  font-size: 20px;
+}
+
+.login {
+  cursor: pointer;
+  color: white;
+  line-height: 50px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #54a0ff;
+  transition: box-shadow 0.5s;
+}
+
+.login:hover {
+  box-shadow: 0 0 10px rgb(72, 112, 164);
+}
+
+.login_active {
+  cursor: pointer;
+  color: white;
+  line-height: 50px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #54a0ff;
+  transition: box-shadow 0.5s;
+  box-shadow: 0 0 10px rgb(72, 112, 164);
+}
+
+/* 主内容 */
+.box {
+  width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* 页脚 */
+footer {
+  margin-top: 40px;
+  background: rgb(72, 112, 164);
+  line-height: 70px;
+  text-align: center;
+  color: white;
+}
